@@ -1,0 +1,69 @@
+jenkins uses an image, skipping
+Building remote_host
+#0 building with "default" instance using docker driver
+
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 630B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/centos:7
+#3 DONE 0.9s
+
+#4 [1/8] FROM docker.io/library/centos:7@sha256:be65f488b7764ad3638f236b7b515b3678369a5124c47b8d32916d6487418ea4
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 36B done
+#5 DONE 0.0s
+
+#6 [5/8] COPY remote-key.pub /home/remote_user/.ssh/authorized_keys
+#6 CACHED
+
+#7 [4/8] RUN useradd remote_user &&     echo "remote_user:1234" | chpasswd &&     mkdir /home/remote_user/.ssh &&     chmod 700 /home/remote_user/.ssh
+#7 CACHED
+
+#8 [2/8] RUN yum install openssh-server -y
+#8 CACHED
+
+#9 [3/8] RUN yum install passwd -y
+#9 CACHED
+
+#10 [6/8] RUN chown remote_user:remote_user -R /home/remote_user/.ssh &&    chmod 600 /home/remote_user/.ssh/authorized_keys
+#10 CACHED
+
+#11 [7/8] RUN ssh-keygen -A
+#11 CACHED
+
+#12 [8/8] RUN yum install nginx -y
+#12 0.603 Loaded plugins: fastestmirror, ovl
+#12 0.774 Loading mirror speeds from cached hostfile
+#12 5.235  * base: centos.excellmedia.net
+#12 5.238  * extras: centos.excellmedia.net
+#12 5.240  * updates: centos.excellmedia.net
+#12 5.870 No package nginx available.
+#12 5.939 Error: Nothing to do
+#12 ERROR: process "/bin/sh -c yum install nginx -y" did not complete successfully: exit code: 1
+------
+ > [8/8] RUN yum install nginx -y:
+0.603 Loaded plugins: fastestmirror, ovl
+0.774 Loading mirror speeds from cached hostfile
+5.235  * base: centos.excellmedia.net
+5.238  * extras: centos.excellmedia.net
+5.240  * updates: centos.excellmedia.net
+5.870 No package nginx available.
+5.939 Error: Nothing to do
+------
+Dockerfile:21
+--------------------
+  19 |     RUN ssh-keygen -A
+  20 |     
+  21 | >>> RUN yum install nginx -y
+  22 |     
+  23 |     CMD ["nginx", "-g", "daemon off;"]
+--------------------
+ERROR: failed to solve: process "/bin/sh -c yum install nginx -y" did not complete successfully: exit code: 1
+Service 'remote_host' failed to build : Build failed

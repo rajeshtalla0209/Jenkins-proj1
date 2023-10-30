@@ -1,0 +1,54 @@
+## practise
+ Jenkins -proj 1
+ 
+ 
+ centos :
+ 
+	yum install -y passwd
+	yum install openssh-server -y
+
+yum fix :
+		sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+		sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+
+
+=========================
+
+docker commands
+
+ docker run -it centos bash
+
+
+	
+	docker run --name rajcentos2 -it centos bash
+	docker exec -it rajcentos2 bash
+
+ docker-compose build
+ docker images
+ docker-compose up -d
+
+
+Errors /Issues
+
+	ERROR: for remote-host  Cannot create container for service remote_host: Conflict. The container name "/remote-host" Creating jenkins     ... error
+	(or rename) that container to be able to reuse that name.
+
+	ERROR: for jenkins  Cannot create container for service jenkins: Conflict. The container name "/jenkins" is already in use by container "59ae485296acfcd9e50946d6f8aeaa07c22f4c2040033f9c697b652a875ae9d6". You have to remove (or rename) that container to be able to reuse that name.
+
+	ERROR: for remote_host  Cannot create container for service remote_host: Conflict. The container name "/remote-host" is already in use by container "7308ccc0d5578eda58e3041060a6088c3cd2606a228a3aad1a0abdcb8f7c4ae6". You have to remove (or rename) that container to be able to reuse that name.
+
+	ERROR: for jenkins  Cannot create container for service jenkins: Conflict. The container name "/jenkins" is already in use by container "59ae485296acfcd9e50946d6f8aeaa07c22f4c2040033f9c697b652a875ae9d6". You have to remove (or rename) that container to be able to reuse that name.
+	ERROR: Encountered errors while bringing up the project.
+
+
+fix : 	root@rajserver:/u01/jenkins# docker rm jenkins
+		jenkins
+		root@rajserver:/u01/jenkins# docker rm remote-host
+		remote-host
+		root@rajserver:/u01/jenkins# docker-compose up -d
+		Creating jenkins     ... done
+		Creating remote-host ... done
+		root@rajserver:/u01/jenkins#
+
+
+=========================

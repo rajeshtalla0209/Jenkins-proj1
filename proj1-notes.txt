@@ -1,0 +1,28 @@
+## practise
+ Jenkins -proj 1
+ 
+ 
+ centos :
+ 
+	yum install -y passwd
+	yum install openssh-server -y
+
+yum fix :
+		sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+		sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+
+
+========================
+
+docker commands
+
+ docker run -it centos bash
+
+
+	
+	docker run --name rajcentos2 -it centos bash
+	docker exec -it rajcentos2 bash
+	
+
+
+===========================
