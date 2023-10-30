@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>ldap</artifactId>
-  <version>701.vf8619de9160a_</version>
+  <version>711.vb_d1a_491714dc</version>
   <packaging>hpi</packaging>
   <name>LDAP Plugin</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -20,7 +20,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/ldap-plugin.git</connection>
     <developerConnection>scm:git:https://github.com/jenkinsci/ldap-plugin.git</developerConnection>
-    <tag>f8619de9160a0043ee29af0f394707209d8b33b1</tag>
+    <tag>bd1a491714dc7e9e5c7293a52d60aa83506b2e28</tag>
     <url>https://github.com/jenkinsci/ldap-plugin</url>
   </scm>
   <distributionManagement>

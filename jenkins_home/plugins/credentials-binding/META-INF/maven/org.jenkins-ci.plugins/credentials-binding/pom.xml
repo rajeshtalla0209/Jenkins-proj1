@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>credentials-binding</artifactId>
-  <version>636.v55f1275c7b_27</version>
+  <version>642.v737c34dea_6c2</version>
   <packaging>hpi</packaging>
   <name>Credentials Binding Plugin</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -19,7 +19,7 @@
   <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:https://github.com/jenkinsci/credentials-binding-plugin</connection>
     <developerConnection>scm:git:https://github.com/jenkinsci/credentials-binding-plugin</developerConnection>
-    <tag>55f1275c7b273f617d1223c86d85f6ea8ad1039e</tag>
+    <tag>737c34dea6c2e7ac8a7fef1da9db92f8c4e980ed</tag>
     <url>https://github.com/jenkinsci/credentials-binding-plugin</url>
   </scm>
   <distributionManagement>
@@ -69,7 +69,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.48</version>
+        <version>3.49</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

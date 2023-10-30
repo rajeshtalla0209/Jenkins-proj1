@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins.workflow</groupId>
   <artifactId>workflow-cps</artifactId>
-  <version>3802.vd42b_fcf00b_a_c</version>
+  <version>3806.va_3a_6988277b_2</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Groovy</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -42,7 +42,7 @@
   <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:https://github.com/jenkinsci/workflow-cps-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/workflow-cps-plugin.git</developerConnection>
-    <tag>d42bfcf00bac957d4cec72c28d0b95fc54e20946</tag>
+    <tag>a3a6988277b25db68ddefecaaa198e407da9971a</tag>
     <url>https://github.com/jenkinsci/workflow-cps-plugin</url>
   </scm>
   <distributionManagement>
@@ -124,7 +124,7 @@
     <dependency>
       <groupId>com.cloudbees</groupId>
       <artifactId>groovy-cps</artifactId>
-      <version>3802.vd42b_fcf00b_a_c</version>
+      <version>3806.va_3a_6988277b_2</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
@@ -155,7 +155,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.48</version>
+        <version>3.49</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

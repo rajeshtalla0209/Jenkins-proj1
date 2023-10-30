@@ -4,13 +4,13 @@ Build-Jdk-Spec: 11
 Specification-Title: Pipeline: Build Step
 Specification-Version: 0.0
 Implementation-Title: Pipeline: Build Step
-Implementation-Version: 505.v5f0844d8d126
+Implementation-Version: 516.v8ee60a_81c5b_9
 Group-Id: org.jenkins-ci.plugins
 Artifact-Id: pipeline-build-step
 Short-Name: pipeline-build-step
 Long-Name: Pipeline: Build Step
 Url: https://github.com/jenkinsci/pipeline-build-step-plugin
-Plugin-Version: 505.v5f0844d8d126
+Plugin-Version: 516.v8ee60a_81c5b_9
 Hudson-Version: 2.387.3
 Jenkins-Version: 2.387.3
 Plugin-Dependencies: workflow-api:1213.v646def1087f9,workflow-step-api:6
@@ -21,8 +21,8 @@ Plugin-License-Name: MIT License
 Plugin-License-Url: https://opensource.org/licenses/MIT
 Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/pipeline-buil
  d-step-plugin.git
-Plugin-ScmTag: 5f0844d8d1261c943ed204ec714be0961ec2f8f1
+Plugin-ScmTag: 8ee60a81c5b96eadba28793468443a8f786dddba
 Plugin-ScmUrl: https://github.com/jenkinsci/pipeline-build-step-plugin
-Plugin-GitHash: 5f0844d8d1261c943ed204ec714be0961ec2f8f1
-Implementation-Build: 5f0844d8d1261c943ed204ec714be0961ec2f8f1
+Plugin-GitHash: 8ee60a81c5b96eadba28793468443a8f786dddba
+Implementation-Build: 8ee60a81c5b96eadba28793468443a8f786dddba
 

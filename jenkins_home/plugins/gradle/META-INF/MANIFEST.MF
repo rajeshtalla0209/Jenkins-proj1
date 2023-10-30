@@ -12,6 +12,6 @@ Long-Name: Gradle Plugin
 Jenkins-Version: 2.303.3
 Url: https://github.com/jenkinsci/gradle-plugin
 Compatible-Since-Version: 1.0
-Plugin-Version: 2.8.2
+Plugin-Version: 2.9
 Plugin-Developers: Stefan Wolf:wolfs:
 

@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>pipeline-build-step</artifactId>
-  <version>505.v5f0844d8d126</version>
+  <version>516.v8ee60a_81c5b_9</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Build Step</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/pipeline-build-step-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/pipeline-build-step-plugin.git</developerConnection>
-    <tag>5f0844d8d1261c943ed204ec714be0961ec2f8f1</tag>
+    <tag>8ee60a81c5b96eadba28793468443a8f786dddba</tag>
     <url>https://github.com/jenkinsci/pipeline-build-step-plugin</url>
   </scm>
   <distributionManagement>
@@ -64,18 +64,12 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
-  <repositories>
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>https://repo.jenkins-ci.org/public/</url>
-    </repository>
-  </repositories>
   <build>
     <plugins>
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.46</version>
+        <version>3.49</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

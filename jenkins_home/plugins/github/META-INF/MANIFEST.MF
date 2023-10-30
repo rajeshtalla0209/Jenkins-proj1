@@ -1,17 +1,17 @@
 Manifest-Version: 1.0
 Created-By: Maven Archiver 3.6.0
-Build-Jdk-Spec: 17
+Build-Jdk-Spec: 11
 Specification-Title: GitHub plugin
-Specification-Version: 1.37
+Specification-Version: 0.0
 Implementation-Title: GitHub plugin
-Implementation-Version: 1.37.3
+Implementation-Version: 1.37.3.1
 Plugin-Class: org.jenkinsci.plugins.github.GitHubPlugin
 Group-Id: com.coravy.hudson.plugins.github
 Artifact-Id: github
 Short-Name: github
 Long-Name: GitHub plugin
 Url: https://github.com/jenkinsci/github-plugin
-Plugin-Version: 1.37.3
+Plugin-Version: 1.37.3.1
 Hudson-Version: 2.387.3
 Jenkins-Version: 2.387.3
 Plugin-Dependencies: commons-lang3-api:3.13.0-62.v7d18e55f51e2,okhttp-ap
@@ -25,8 +25,8 @@ Plugin-License-Name: MIT License
 Plugin-License-Url: https://www.opensource.org/licenses/mit-license.php
 Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/github-plugin
  .git
-Plugin-ScmTag: v1.37.3
+Plugin-ScmTag: v1.37.3.1
 Plugin-ScmUrl: https://github.com/jenkinsci/github-plugin
-Plugin-GitHash: c7b23cac65cd3abb8cc309a9102bf5cbf3097edb
-Implementation-Build: c7b23cac65cd3abb8cc309a9102bf5cbf3097edb
+Plugin-GitHash: 91daa3b2d5601699e7f685bc56ebdeb80603ed52
+Implementation-Build: 91daa3b2d5601699e7f685bc56ebdeb80603ed52
 

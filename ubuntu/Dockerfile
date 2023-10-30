@@ -15,4 +15,9 @@ COPY remote-key.pub /home/remote_user/.ssh/authorized_keys
 RUN chown remote_user:remote_user   -R /home/remote_user && \
     chmod 400 /home/remote_user/.ssh/authorized_keys
 
+RUN apt-get install -y mysql-client
+
+RUN apt install python-pip -y 
+RUN pip install awscli 
+
 CMD /usr/sbin/sshd -D
